@@ -18,7 +18,7 @@
 		</data>
 		<key>Resources/applet.rsrc</key>
 		<data>
-		dfsHRb7lUR+V+h4yz2Qx0ujI5Yg=
+		dXf3j6UgjCmOHy1AOijKyZZ1kfw=
 		</data>
 		<key>Resources/description.rtfd/TXT.rtf</key>
 		<data>
@@ -64,11 +64,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			dfsHRb7lUR+V+h4yz2Qx0ujI5Yg=
+			dXf3j6UgjCmOHy1AOijKyZZ1kfw=
 			</data>
 			<key>hash2</key>
 			<data>
-			aKLlRgcZ7FL3ierG3uqdMHqqsC/yQrZCM3wODTgvnvQ=
+			JcV2AloCowWDSclMR2U6ho/f8FREX6Ulflk9Y7wFhZQ=
 			</data>
 		</dict>
 		<key>Resources/description.rtfd/TXT.rtf</key>
@@ -86,7 +86,7 @@
 		<dict>
 			<key>cdhash</key>
 			<data>
-			pLgy/QBngNfjkcoYTBWXa+ImkIQ=
+			VqPrEy4/RxC7wIbexyvBIuoVyCE=
 			</data>
 			<key>requirement</key>
 			<string>identifier "com.mycompany.Mesh-Hook" and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = "47TRS7H4BH"</string>

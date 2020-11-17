@@ -16,8 +16,6 @@
 	<string>2.0</string>
 	<key>SDCocoaTermsInProperties</key>
 	<true/>
-	<key>SDCodesignIdentity</key>
-	<string>Developer ID Application: Brett Terpstra (47TRS7H4BH)</string>
 	<key>SDFolds</key>
 	<string>YnBsaXN0MDDUAQIDBAUGBwpYJHZlcnNpb25ZJGFyY2hpdmVyVCR0b3BYJG9iamVj
 dHMSAAGGoF8QD05TS2V5ZWRBcmNoaXZlctEICVRyb290gAGjCwwRVSRudWxs0g0O
@@ -67,9 +65,9 @@ XWJtdHV3fIeQn6OrAAAAAAAAAQEAAAAAAAAAGAAAAAAAAAAAAAAAAAAAALQ=</string>
 						<dict>
 							<key>3</key>
 							<array>
-								<integer>319</integer>
-								<integer>405</integer>
-								<integer>160</integer>
+								<integer>312</integer>
+								<integer>396</integer>
+								<integer>155</integer>
 							</array>
 							<key>5</key>
 							<array>
@@ -111,6 +109,56 @@ XWJtdHV3fIeQn6OrAAAAAAAAAQEAAAAAAAAAGAAAAAAAAAAAAAAAAAAAALQ=</string>
 						</dict>
 						<key>prettyPrint</key>
 						<false/>
+						<key>sourceState</key>
+						<dict>
+							<key>text</key>
+							<dict>
+								<key>LNSSelection</key>
+								<array>
+									<dict>
+										<key>length</key>
+										<integer>12</integer>
+										<key>location</key>
+										<integer>0</integer>
+									</dict>
+								</array>
+								<key>LNSTextViewShowInvisibles</key>
+								<integer>0</integer>
+								<key>LNSTextViewShowSpaces</key>
+								<integer>0</integer>
+								<key>LNSTextViewShowTabStops</key>
+								<integer>0</integer>
+								<key>LNSTextViewWrapLines</key>
+								<integer>1</integer>
+								<key>LNSVisibleRect</key>
+								<string>{{0, 0}, {424, 289.5}}</string>
+							</dict>
+						</dict>
+						<key>textState</key>
+						<dict>
+							<key>text</key>
+							<dict>
+								<key>LNSSelection</key>
+								<array>
+									<dict>
+										<key>length</key>
+										<integer>0</integer>
+										<key>location</key>
+										<integer>66</integer>
+									</dict>
+								</array>
+								<key>LNSTextViewShowInvisibles</key>
+								<integer>0</integer>
+								<key>LNSTextViewShowSpaces</key>
+								<integer>0</integer>
+								<key>LNSTextViewShowTabStops</key>
+								<integer>0</integer>
+								<key>LNSTextViewWrapLines</key>
+								<integer>1</integer>
+								<key>LNSVisibleRect</key>
+								<string>{{0, 0}, {424, 289.5}}</string>
+							</dict>
+						</dict>
 					</dict>
 					<key>stackVisible</key>
 					<false/>
@@ -133,32 +181,7 @@ XWJtdHV3fIeQn6OrAAAAAAAAAQEAAAAAAAAAGAAAAAAAAAAAAAAAAAAAALQ=</string>
 					</dict>
 				</dict>
 				<key>eventLogHeight</key>
-				<real>368</real>
-				<key>eventLogViewState</key>
-				<dict>
-					<key>format</key>
-					<string>EventLogScopeBar_Source</string>
-					<key>resultState</key>
-					<dict>
-						<key>modes</key>
-						<array>
-							<string>mode.best</string>
-						</array>
-						<key>positions2</key>
-						<dict>
-							<key>positions</key>
-							<dict/>
-						</dict>
-						<key>prettyPrint</key>
-						<false/>
-					</dict>
-					<key>resultViewerWidth</key>
-					<real>410</real>
-					<key>scopeVisible</key>
-					<true/>
-					<key>showResultViewer</key>
-					<false/>
-				</dict>
+				<real>174.5</real>
 				<key>inspectorsViewState</key>
 				<dict>
 					<key>applications</key>
@@ -216,7 +239,7 @@ XWJtdHV3fIeQn6OrAAAAAAAAAQEAAAAAAAAAGAAAAAAAAAAAAAAAAAAAALQ=</string>
 							<key>2</key>
 							<array>
 								<integer>293</integer>
-								<integer>571</integer>
+								<integer>572</integer>
 							</array>
 						</dict>
 					</dict>
@@ -236,9 +259,9 @@ XWJtdHV3fIeQn6OrAAAAAAAAAQEAAAAAAAAAGAAAAAAAAAAAAAAAAAAAALQ=</string>
 						<array>
 							<dict>
 								<key>length</key>
-								<integer>0</integer>
+								<integer>529</integer>
 								<key>location</key>
-								<integer>109</integer>
+								<integer>84</integer>
 							</dict>
 						</array>
 						<key>LNSTextViewShowInvisibles</key>
@@ -250,21 +273,21 @@ XWJtdHV3fIeQn6OrAAAAAAAAAQEAAAAAAAAAGAAAAAAAAAAAAAAAAAAAALQ=</string>
 						<key>LNSTextViewWrapLines</key>
 						<false/>
 						<key>LNSVisibleRect</key>
-						<string>{{0, 0}, {703, 507}}</string>
+						<string>{{0, 0}, {703, 862}}</string>
 						<key>ShowLineNumbers</key>
 						<false/>
 						<key>showCodeCoverage</key>
 						<false/>
 					</dict>
 					<key>instanceID</key>
-					<string>D82593EF-4CAC-450F-AEED-2BF938FB64E5-53746-00012D64B6326AAB</string>
+					<string>B17A6CDD-B829-4D4E-87D8-AB58D707E62B-53746-00012F399B8E405D</string>
 					<key>resultBarVisible</key>
 					<false/>
 					<key>showProgressBar</key>
 					<false/>
 				</dict>
 				<key>showEventLog</key>
-				<true/>
+				<false/>
 				<key>tabHeights</key>
 				<dict>
 					<key>tab.bps</key>
@@ -279,7 +302,7 @@ XWJtdHV3fIeQn6OrAAAAAAAAAQEAAAAAAAAAGAAAAAAAAAAAAAAAAAAAALQ=</string>
 				<key>windowControllerID</key>
 				<string>5259FFA7-599D-4A3C-BF37-18E8FAB15945-53746-00012D614FFC4BC5</string>
 				<key>windowFrame</key>
-				<string>642 105 1189 965 0 0 1920 1177 </string>
+				<string>1907 447 1189 965 0 0 3360 1867 </string>
 			</dict>
 		</dict>
 		<key>windowControllers</key>
@@ -294,7 +317,7 @@ XWJtdHV3fIeQn6OrAAAAAAAAAQEAAAAAAAAAGAAAAAAAAAAAAAAAAAAAALQ=</string>
 					<key>miniaturized</key>
 					<false/>
 					<key>windowFrame</key>
-					<string>642 105 1189 965 0 0 1920 1177 </string>
+					<string>1907 447 1189 965 0 0 3360 1867 </string>
 				</dict>
 			</dict>
 		</array>
