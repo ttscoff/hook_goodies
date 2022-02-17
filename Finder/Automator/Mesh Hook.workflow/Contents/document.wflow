@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>AMApplicationBuild</key>
-	<string>492</string>
+	<string>512</string>
 	<key>AMApplicationVersion</key>
 	<string>2.10</string>
 	<key>AMDocumentVersion</key>
@@ -51,14 +51,33 @@
 				<key>ActionParameters</key>
 				<dict>
 					<key>source</key>
-					<string>on run {input, parameters}		tell application "Finder"		set _files to selection		set _targets to _files		if (count of _files) &gt; 1 then			repeat with _file in _files				repeat with _target in _targets					if _file is not equal to _target then						tell application "Hook"							log POSIX path of (_file as string)							set _src to make bookmark with data (POSIX path of (_file as string))							set _tgt to make bookmark with data (POSIX path of (_target as string))							hook _src and _tgt						end tell					end if				end repeat			end repeat		else			display dialog "2 or more files must be selected"		end if	end tell		return inputend run</string>
-				</dict>
-				<key>ActionRuntimeParameters</key>
-				<dict>
-					<key>source</key>
-					<string>on run {input, parameters}		tell application "Finder"		set _files to selection		set _targets to _files		if (count of _files) &gt; 1 then			repeat with _file in _files				repeat with _target in _targets					if _file is not equal to _target then						tell application "Hook"							log POSIX path of (_file as string)							set _src to make bookmark with data (POSIX path of (_file as string))							set _tgt to make bookmark with data (POSIX path of (_target as string))							hook _src and _tgt						end tell					end if				end repeat			end repeat		else			display dialog "2 or more files must be selected"		end if	end tell		return inputend run</string>
-					<key>temporary items path</key>
-					<string>/var/folders/q7/sps8n5_534q22bx1ts4xjjl00000gn/T/F13D2843-8ABD-4CD0-A0FC-E3F8D67D0ACC/1/com.apple.Automator.RunScript</string>
+					<string>on run {input, parameters}
+
+	tell application "Finder"
+		set _files to selection
+		set _targets to _files
+		if (count of _files) &gt; 1 then
+			repeat with _file in _files
+				repeat with _target in _targets
+					if _file is not equal to _target then
+						tell application "Hook"
+							set x to (percent encode POSIX path of (_file as string))
+							set _src to make bookmark with data x
+							set y to (percent encode POSIX path of (_target as string))
+							set _tgt to make bookmark with data y
+							
+							hook _src and _tgt
+						end tell
+					end if
+				end repeat
+			end repeat
+		else
+			display dialog "2 or more files must be selected"
+		end if
+	end tell
+
+	return input
+end</string>
 				</dict>
 				<key>BundleIdentifier</key>
 				<string>com.apple.Automator.RunScript</string>
@@ -112,7 +131,7 @@ end run</string>
 				<key>isViewVisible</key>
 				<true/>
 				<key>location</key>
-				<string>545.000000:368.000000</string>
+				<string>724.500000:368.000000</string>
 				<key>nibPath</key>
 				<string>/System/Library/Automator/Run AppleScript.action/Contents/Resources/Base.lproj/main.nib</string>
 			</dict>
@@ -144,7 +163,7 @@ end run</string>
 		<key>presentationMode</key>
 		<integer>11</integer>
 		<key>processesInput</key>
-		<integer>0</integer>
+		<false/>
 		<key>serviceApplicationBundleID</key>
 		<string>com.apple.finder</string>
 		<key>serviceApplicationPath</key>
@@ -154,11 +173,11 @@ end run</string>
 		<key>serviceOutputTypeIdentifier</key>
 		<string>com.apple.Automator.nothing</string>
 		<key>serviceProcessesInput</key>
-		<integer>0</integer>
+		<false/>
 		<key>systemImageName</key>
 		<string>NSActionTemplate</string>
 		<key>useAutomaticInputType</key>
-		<integer>1</integer>
+		<true/>
 		<key>workflowTypeIdentifier</key>
 		<string>com.apple.Automator.servicesMenu</string>
 	</dict>

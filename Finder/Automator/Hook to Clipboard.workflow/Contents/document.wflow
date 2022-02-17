@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>AMApplicationBuild</key>
-	<string>492</string>
+	<string>512</string>
 	<key>AMApplicationVersion</key>
 	<string>2.10</string>
 	<key>AMDocumentVersion</key>
@@ -51,7 +51,34 @@
 				<key>ActionParameters</key>
 				<dict>
 					<key>source</key>
-					<string>on run {input, parameters}		set _pb to the clipboard as record	set _url to string of _pb	set _title to Unicode text of _pb		tell application "Hook"		set _hook to make bookmark with data _url		set name of _hook to _title	end tell		tell application "Finder"		set _files to selection		if (count of _files) &gt; 0 then			repeat with _file in _files				tell application "Hook"					set _target to make bookmark with data (POSIX path of (_file as string))					hook _hook and _target				end tell			end repeat		else			display dialog "No files selected"		end if	end tell		return inputend run</string>
+					<string>on run {input, parameters}
+	set _pb to the clipboard as record
+	set _url to string of _pb
+	set _title to Unicode text of _pb
+
+	tell application "Hook"
+		set _hook to make bookmark with data _url
+		set name of _hook to _title
+	end tell
+
+	tell application "Finder"
+		set _files to selection
+		if (count of _files) &gt; 0 then
+			repeat with _file in _files
+				tell application "Hook"
+					set x to (percent encode POSIX path of (_file as string))
+					set _target to make bookmark with data x
+					
+					hook _hook and _target
+				end tell
+			end repeat
+		else
+			display dialog "No files selected"
+		end if
+	end tell
+
+	return input
+end run</string>
 				</dict>
 				<key>BundleIdentifier</key>
 				<string>com.apple.Automator.RunScript</string>
@@ -102,12 +129,10 @@ end run</string>
 						<string>0</string>
 					</dict>
 				</dict>
-				<key>conversionLabel</key>
-				<integer>0</integer>
 				<key>isViewVisible</key>
 				<true/>
 				<key>location</key>
-				<string>545.000000:368.000000</string>
+				<string>724.500000:368.000000</string>
 				<key>nibPath</key>
 				<string>/System/Library/Automator/Run AppleScript.action/Contents/Resources/Base.lproj/main.nib</string>
 			</dict>
@@ -139,7 +164,7 @@ end run</string>
 		<key>presentationMode</key>
 		<integer>11</integer>
 		<key>processesInput</key>
-		<integer>0</integer>
+		<false/>
 		<key>serviceApplicationBundleID</key>
 		<string>com.apple.finder</string>
 		<key>serviceApplicationPath</key>
@@ -149,11 +174,11 @@ end run</string>
 		<key>serviceOutputTypeIdentifier</key>
 		<string>com.apple.Automator.nothing</string>
 		<key>serviceProcessesInput</key>
-		<integer>0</integer>
+		<false/>
 		<key>systemImageName</key>
 		<string>NSActionTemplate</string>
 		<key>useAutomaticInputType</key>
-		<integer>1</integer>
+		<true/>
 		<key>workflowTypeIdentifier</key>
 		<string>com.apple.Automator.servicesMenu</string>
 	</dict>
